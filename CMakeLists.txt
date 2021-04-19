@@ -54,10 +54,10 @@ else ()
 endif ()
 
 if (FMILIBCPP_BUILD_TESTS)
-  list(APPEND BOOST_COMPONENTS unit_test_framework)
+  set(Boost_USE_STATIC_LIBS ON)
+  find_package(Boost 1.66 COMPONENTS unit_test_framework REQUIRED)
 endif ()
 
-find_package(Boost 1.66 COMPONENTS ${BOOST_COMPONENTS} REQUIRED)
 find_package(FMILIB REQUIRED)
 
 # ==============================================================================

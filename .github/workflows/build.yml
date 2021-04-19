@@ -60,8 +60,8 @@ jobs:
           cmake . -A x64 -B build -DFMILIBCPP_BUILD_EXAMPLES=ON -DFMILIBCPP_BUILD_TESTS=ON
           cmake --build build --config Release
         shell: bash
-#      - name: Test
-#        run: |
-#         cd build/tests
-#         ctest -C Release --output-on-failure
-#        shell: bash
+      - name: Test
+        run: |
+         cd build/tests
+         ctest -C Release --output-on-failure
+        shell: bash
