@@ -5,9 +5,9 @@ set(publicHeaderDir ${CMAKE_SOURCE_DIR}/include)
 # ==============================================================================
 
 set(commonPublicHeaders
-        "FMILIBCPP/temp_dir.hpp"
-        "FMILIBCPP/fs_portability.hpp"
-        "FMILIBCPP/fixed_range_random_generator.hpp"
+        "fmilibcpp/temp_dir.hpp"
+        "fmilibcpp/fs_portability.hpp"
+        "fmilibcpp/fixed_range_random_generator.hpp"
         )
 
 set(commonPublicHeadersFull)
